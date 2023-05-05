@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>TelaDeLogin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<body>
+    <form>
+        <h3>Insira o seu login</h3>
+        <input type="text" placeholder="login" id="login">
+        <input type="password" placeholder="Senha" id="senha">
+        <input type="submit" value="Entrar" onclick="logar(); return false">
+
+    </form>
+
+    <script>
+        function logar() {
+            var login = document.getElementById('login').value;
+            var senha = document.getElementById('senha').value;
+
+            if (login == "admin" && senha == "admin") {
+
+                alert('sucesso');
+            }
+            else {
+
+                alert('Acesso negado');
+            }
+        
+        }
+
+
+
+    </script>
+    
+
+</body>
+</html>
